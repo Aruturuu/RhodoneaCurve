@@ -86,3 +86,8 @@ slider3.addEventListener("change", (e) => {
   drawLissajous(value2, value3, value)
   label3.innerHTML = `D: ${value3}`
 })
+window.onresize = resize
+function resize(){
+  window.location.reload()
+}
+//Chamsteww-chan be UwU
