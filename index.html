@@ -1,29 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="icon" href="https://image.flaticon.com/icons/png/512/113/113897.png">
     <title>UwU</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="camvas">
 
-    <link rel="stylesheet" type="text/css" href="style.css">
-
-    <script src="libraries/p5.min.js"></script>
-    <script src="libraries/p5.sound.min.js"></script>
-  </head>
-
-  <body>
-
-    <div>
-    <for>Size</for>
-    <input placeholder="200" name="name" id="amp"/> <br>
-    <for>N</for>
-    <input placeholder="4" name="name" id="n"/> <br>
-    <for>D</for>
-    <input placeholder="5" name="name" id="d"/> <br>
-    <input type="color" id="color" name="color" value="#ffffff">
-    </div>
-    <script src="UwU.js"></script>
-
-  </body>
+    </canvas>
+    <div class="top">
+      <label class="label" for="slider" id="label"></label>
+      <input type="range" min="0" max="360" value="200" id="slider" class="slider"/>
+      <label class="label" for="slider2" id="label2"></label>
+      <input type="range" min="1" max="10" value="4" id="slider2" class="slider"/>
+      <label class="label" for="slider3" id="label3"></label>
+      <input type="range" min="1" max="10" value="5" id="slider3" class="slider"/>
+      </div>
+    <script src='sketch.js'></script>
+</body>
 </html>
